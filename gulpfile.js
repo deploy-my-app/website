@@ -12,5 +12,21 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.less('app.less');
+	/* Add all common css */
+    mix.styles([
+    	"./**/*.css"
+    ],"public/css/all.css","resources/css/all");
+    /* Add all common js */
+    mix.scripts([
+    	"./**/*.js",
+    ],"public/js/all.js","resources/js/all");
+	/* Add all dashboard css */
+    mix.styles([
+    	"./**/*.css"
+    ],"public/css/dashboard.css","resources/css/dashboard");
+    /* Add all dashboard js */
+    mix.scripts([
+    	"../vendor/jquery.min.js",
+    	"./**/*.js",
+    ],"public/js/dashboard.js","resources/js/dashboard");
 });

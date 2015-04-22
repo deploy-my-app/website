@@ -12,6 +12,6 @@
 */
 
 Route::get('/', 'WelcomeController@index');
-/*
-
-*/
+Route::get('/dashboard',function(){
+	return view('dashboard.index');
+});
