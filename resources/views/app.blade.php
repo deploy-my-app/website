@@ -17,7 +17,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    @yield('stylesheets')
+    
 		<title>The-Deployer.com</title>
 		<style type="text/css">
 			.hero{
@@ -87,8 +87,8 @@
 			    margin-left: auto;
 			    margin-right: auto;
 			}
-      .sidebar.affix-top{
-        position: absolute; /* allows it to "slide" up into view */
+      /*.sidebar.affix-top{
+        position: absolute; /* allows it to "slide" up into view *
        display:none;
       }
       .sidebar-right.affix-top{
@@ -125,7 +125,7 @@
         .sidebar{
           display:none;
         }
-      }
+      }*/
       .contact input{
         -moz-border-bottom-colors: none;
         -moz-border-left-colors: none;
@@ -188,6 +188,7 @@
         position:fixed;
       }
 		</style>
+    @yield('stylesheets')
 	</head>
   
   
